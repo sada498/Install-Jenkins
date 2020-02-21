@@ -22,9 +22,12 @@ sudo yum -y install java-1.8.0-openjdk epel-release
  ```
  
   ![picture 3](images/Picture3.png)
+  
 **Note: use the latest version Jenkins to avoid the plugin errors.**
+
  
 5. Enable Jenkins.
+
  ```
  sudo systemctl enable Jenkins
  ```
@@ -32,6 +35,7 @@ sudo yum -y install java-1.8.0-openjdk epel-release
   ![picture 4](images/Picture4.png)
 
 6. Start Jenkins.
+
  ```
  sudo systemctl start Jenkins
  ```
@@ -41,36 +45,41 @@ sudo yum -y install java-1.8.0-openjdk epel-release
 
 
 **Create an account in Jenkins** 
+
 1. In browser 
  If you are using cloud to check the Jenkins in browser
-   ```
-  JENKINS_PUBLIC_IP:8080
-   ```
+ 
+     ```
+     JENKINS_PUBLIC_IP:8080
+     ```
                     
-  If you are using physical host 
-   ``` 
-   localhost:8080
-   ```
+  If you are using physical host   
+  
+      ``` 
+      localhost:8080
+       ```
+   
  2.	Unlock Jenkins
+ 
   
   ![picture 7](images/Picture7.png)                    
 
 3. Find admin password 
 
- ``` 
- sudo cat /var/lib/jenkins/secrets/initialAdminPassword
- ```
+    ``` 
+    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+    ```
 
-  ![picture 8](images/Picture8.png) 
+ ![picture 8](images/Picture8.png) 
     
     
-Then select the Install suggested plugins
+ Then select the Install suggested plugins
 
 
-  ![picture 9](images/Picture9.png) 
+ ![picture 9](images/Picture9.png) 
   
   
-To avoid the error use latest version Jenkins 
+  To avoid the error use latest version Jenkins 
 
 
   ![picture 10](images/Picture10.png)
